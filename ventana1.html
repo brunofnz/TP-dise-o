@@ -14,8 +14,8 @@
     <style>
         .buscador {
             border-top-left-radius: 20px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 50px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 30px;
             border-bottom-left-radius: 30px;
         }
         tr:nth-child(even){
@@ -32,7 +32,17 @@
                 <h3>Codigo respuesto 12345</h3>
             </div>
             <div class="col">
-                <input type="search" class="buscador" id="input-search" placeholder="    Ingresar ID/Nombre">
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        
+                    </div>
+                    <div class="col-5">
+                        <input type="search" class="buscador" id="input-search" placeholder="    Ingresar ID/Nombre">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -163,6 +173,15 @@
             </table>
             </div>
         </di>
+        <hr></hr>
+        <div class="row justify-content-center">                     
+            <div class="col">
+                SELECCIONAR PERIODO: Desde: <input type="date" id="bday" name="bday">
+                Hasta: <input type="date" id="bday" name="bday">
+                <button type="button" style="background-color: #246355" class="btn btn-success btn">Aplicar</button>
+                <p></p>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <table>
