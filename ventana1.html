@@ -12,26 +12,42 @@
 
     <title>TP diseño</title>
     <style>
-        .blanco_mate {
-            background: #f8eee6;
+        .tabla_prov_alter {
+            text-align: left;
+            border-collapse: collapse;
+            width: 100%;
         }
-        .tablex {
-            background-color: #d2d5d9;
+
+        .tabla_estados {
+            text-align: left;
+            border-collapse: collapse;
+            width: 100%;
         }
+        .tabla_estados td {
+            background-color: #246355;color: white;
+            
+        }
+
+        th, td {
+            border: solid 1px black;
+            padding: 0;
+        }
+
         .buscador {
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 30px;
             border-bottom-left-radius: 30px;
         }
-        /* tr:nth-child(even){
-        background-color: #ddd; */
-}
+
+        .tabla_prov_alter tr:nth-child(even){
+        background-color: #fff2de; 
+        }
 
     </style>
 </head>
 
-<body>
+<body style="background: #f4f4f4;">
     <div class="container blanco_mate">
         <div class="row">
             <div class="col">
@@ -46,7 +62,7 @@
                         
                     </div>
                     <div class="col-5">
-                        <input type="search" class="buscador" id="input-search" placeholder="    Ingresar ID/Nombre">
+                        <input type="search" class="buscador" id="input-search" placeholder="Ingresar Cod." style="text-align: center;">
                     </div>
                 </div>
             </div>
@@ -60,29 +76,26 @@
             </div>
             <div class="col col-5">
                 <div class="row">
-                    <h2>
+                    <h3 style=" width: 100%; text-align: center;margin-bottom: -1px;border:1px solid black">
                         N° Ult. Factura de Fabrica: 12345
-                    </h2>
+                    </h3>
                 </div>
                 <div class="row">
-                    <table class="table table-bordered">
-                        <thead>
+                    <h3 style="background-color:#246355 ; width: 100%; text-align: center;margin-bottom: 1px;border:1px solid black;color: white;">
+                       Ultimo Proveedor
+                    </h3>
+                    <table class="table" >
+                        <tbody style="text-align: left;border:1px solid black;">
                             <tr>
-                                <th>Ultimo Proveedor</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Número</td>
+                                <td style="margin-right: 1px black;">Número</td>
                                 <td>12345</td>
                             </tr>
                             <tr>
-                                <td>Nombre</td>
+                                <td >Nombre</td>
                                 <td>Diego Romero</td>
                             </tr>
                             <tr>
-                                <td>Dirección</td>
+                                <td >Dirección</td>
                                 <td>Av. San Martin 1548</td>
                             </tr>
                         </tbody>
@@ -91,7 +104,7 @@
             </div>
             <div class="col col-5">
                 <table>
-                    <table class="table table-bordered">
+                    <table class="table tabla_estados" style="border-collapse: collapse;">
                         <!-- <thead>
                             <tr>
                                 <th>Cod.</th>
@@ -101,23 +114,23 @@
                         <tbody>
                             <tr>
                                 <td>Precio unitario ultima compra</td>
-                                <td>1</td>
+                                <td style="text-align: center; background-color: white;color: black;">1</td>
                             </tr>
                             <tr>
                                 <td>Existencias cierre ultimo ejercio contable</td>
-                                <td>3</td>
+                                <td style="text-align: center; background-color: white;color: black;">3</td>
                             </tr>
                             <tr>
                                 <td>Total unidades ingresadas</td>
-                                <td>1</td>
+                                <td style="text-align: center; background-color: white;color: black;">1</td>
                             </tr>
                             <tr>
                                 <td>Existencia actual</td>
-                                <td>1</td>
+                                <td style="text-align: center; background-color: white;color: black;">1</td>
                             </tr>
                             <tr>
                                 <td>Valor de la ultima compra</td>
-                                <td>3</td>
+                                <td style="text-align: center; background-color: white;color: black;">3</td>
                             </tr>
                         </tbody>
                     </table>
@@ -127,10 +140,9 @@
         <di class="row">
             <div class="col">
                 <h3>Proveedores Alternativos</h3>
-            <table>
-                <table class="table table-bordered">
+                <table class="table tabla_prov_alter">
                     <thead>
-                        <tr style=" background-color: #246355;color: white;">
+                        <tr style="background-color: #246355;color: white;">
                             <th>Proveedores alternativos</th>
                             <th>Número</th>
                             <th>Nombre</th>
@@ -176,7 +188,6 @@
                         </tr>
                     </tbody>
                 </table>
-            </table>
             </div>
         </di>
         <hr></hr>
@@ -191,8 +202,8 @@
         <div class="row">
             <div class="col">
                 <table>
-                    <table class="table table-bordered">
-                        <thead>
+                    <table class="table tabla_prov_alter">
+                        <thead style="background-color: #246355;color: white;">
                             <tr>
                                 <th>Fecha Utilización</th>
                                 <th>Chapa Patente</th>
