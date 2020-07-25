@@ -9,11 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-      
+
 
     <title>TP diseño 2</title>
     <style type="text/css">
-
         .table {
             text-align: left;
             border-collapse: collapse;
@@ -44,72 +43,236 @@
             margin-right: 50px;
             padding: 10px;
         }
-                .overlayd {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 
-    transition: opacity 20ms;
-    opacity: 0;
-}
-.overlayd:target {
-    z-index: 2;
-    visibility: visible;
-    opacity: 1;
-}
-#popup{
-    background: rgba(192, 192, 192, 0.7);
-    width: 100%;
-    height: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    transition: all 50ms ease-in-out;    
-}
-        .tabla_estados td {
-            background-color: #246355;color: white;
-            
+        .overlayd {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            transition: opacity 20ms;
+            opacity: 0;
         }
 
+        .overlayd:target {
+            z-index: 2;
+            visibility: visible;
+            opacity: 1;
+        }
 
+        #popup {
+            background: rgba(192, 192, 192, 0.7);
+            width: 100%;
+            height: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            transition: all 50ms ease-in-out;
+        }
+
+        .tabla_estados td {
+            background-color: #246355;
+            color: white;
+
+        }
     </style>
 </head>
 
 <body style="background: #f4f4f4;z-index: -1;">
     <div class="container">
 
-                     <div id="popup" class="overlayd"  >
-                        <a  href="#" style="text-decoration: none">
-                                    <table class=" tabla_estados" style="margin-left: auto;margin-right: auto; margin-top: 15%">
-                        <tbody>
-                            <tr>
-                                <td>CODIGO REPUESTO</td>
-                                <td style="text-align: center; background-color: white;color: black;">153678</td>
-                            </tr>
-                            <tr>
-                                <td>Precio unitario ultima compra</td>
-                                <td style="text-align: center; background-color: white;color: black;">1</td>
-                            </tr>
-                            <tr>
-                                <td>Existencias cierre ultimo ejercio contable</td>
-                                <td style="text-align: center; background-color: white;color: black;">3</td>
-                            </tr>
-                            <tr>
-                                <td>Total unidades ingresadas</td>
-                                <td style="text-align: center; background-color: white;color: black;">1</td>
-                            </tr>
-                            <tr>
-                                <td>Existencia actual</td>
-                                <td style="text-align: center; background-color: white;color: black;">1</td>
-                            </tr>
-                            <tr>
-                                <td>Valor de la ultima compra</td>
-                                <td style="text-align: center; background-color: white;color: black;">3</td>
-                            </tr>
-                        </tbody>
-                    </table></a>
-            </div>
+        <div id="popup" class="overlayd">
+            <a href="#" style="text-decoration: none">
+                <table class=" tabla_estados" style="margin-left: auto;margin-right: auto; margin-top: 15%">
+                    <tbody>
+                        <tr>
+                            <td>CODIGO REPUESTO</td>
+                            <td style="text-align: center; background-color: white;color: black;">153678</td>
+                        </tr>
+                        <tr>
+                            <td>Precio unitario ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">1</td>
+                        </tr>
+                        <tr>
+                            <td>Existencias cierre ultimo ejercio contable</td>
+                            <td style="text-align: center; background-color: white;color: black;">3</td>
+                        </tr>
+                        <tr>
+                            <td>Total unidades ingresadas</td>
+                            <td style="text-align: center; background-color: white;color: black;">1</td>
+                        </tr>
+                        <tr>
+                            <td>Existencia actual</td>
+                            <td style="text-align: center; background-color: white;color: black;">1</td>
+                        </tr>
+                        <tr>
+                            <td>Valor de la ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+        <div id="popup2" class="overlayd">
+            <a href="#" style="text-decoration: none">
+                <table class=" tabla_estados" style="margin-left: auto;margin-right: auto; margin-top: 15%">
+                    <tbody>
+                        <tr>
+                            <td>CODIGO REPUESTO</td>
+                            <td style="text-align: center; background-color: white;color: black;">658963</td>
+                        </tr>
+                        <tr>
+                            <td>Precio unitario ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">5</td>
+                        </tr>
+                        <tr>
+                            <td>Existencias cierre ultimo ejercio contable</td>
+                            <td style="text-align: center; background-color: white;color: black;">2</td>
+                        </tr>
+                        <tr>
+                            <td>Total unidades ingresadas</td>
+                            <td style="text-align: center; background-color: white;color: black;">4</td>
+                        </tr>
+                        <tr>
+                            <td>Existencia actual</td>
+                            <td style="text-align: center; background-color: white;color: black;">4</td>
+                        </tr>
+                        <tr>
+                            <td>Valor de la ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+        <div id="popup3" class="overlayd">
+            <a href="#" style="text-decoration: none">
+                <table class=" tabla_estados" style="margin-left: auto;margin-right: auto; margin-top: 15%">
+                    <tbody>
+                        <tr>
+                            <td>CODIGO REPUESTO</td>
+                            <td style="text-align: center; background-color: white;color: black;">854785</td>
+                        </tr>
+                        <tr>
+                            <td>Precio unitario ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">7</td>
+                        </tr>
+                        <tr>
+                            <td>Existencias cierre ultimo ejercio contable</td>
+                            <td style="text-align: center; background-color: white;color: black;">3</td>
+                        </tr>
+                        <tr>
+                            <td>Total unidades ingresadas</td>
+                            <td style="text-align: center; background-color: white;color: black;">9</td>
+                        </tr>
+                        <tr>
+                            <td>Existencia actual</td>
+                            <td style="text-align: center; background-color: white;color: black;">2</td>
+                        </tr>
+                        <tr>
+                            <td>Valor de la ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+        <div id="popup4" class="overlayd">
+            <a href="#" style="text-decoration: none">
+                <table class=" tabla_estados" style="margin-left: auto;margin-right: auto; margin-top: 15%">
+                    <tbody>
+                        <tr>
+                            <td>CODIGO REPUESTO</td>
+                            <td style="text-align: center; background-color: white;color: black;">765325</td>
+                        </tr>
+                        <tr>
+                            <td>Precio unitario ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">5</td>
+                        </tr>
+                        <tr>
+                            <td>Existencias cierre ultimo ejercio contable</td>
+                            <td style="text-align: center; background-color: white;color: black;">9</td>
+                        </tr>
+                        <tr>
+                            <td>Total unidades ingresadas</td>
+                            <td style="text-align: center; background-color: white;color: black;">7</td>
+                        </tr>
+                        <tr>
+                            <td>Existencia actual</td>
+                            <td style="text-align: center; background-color: white;color: black;">7</td>
+                        </tr>
+                        <tr>
+                            <td>Valor de la ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+        <div id="popup5" class="overlayd">
+            <a href="#" style="text-decoration: none">
+                <table class=" tabla_estados" style="margin-left: auto;margin-right: auto; margin-top: 15%">
+                    <tbody>
+                        <tr>
+                            <td>CODIGO REPUESTO</td>
+                            <td style="text-align: center; background-color: white;color: black;">951841</td>
+                        </tr>
+                        <tr>
+                            <td>Precio unitario ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">2</td>
+                        </tr>
+                        <tr>
+                            <td>Existencias cierre ultimo ejercio contable</td>
+                            <td style="text-align: center; background-color: white;color: black;">8</td>
+                        </tr>
+                        <tr>
+                            <td>Total unidades ingresadas</td>
+                            <td style="text-align: center; background-color: white;color: black;">1</td>
+                        </tr>
+                        <tr>
+                            <td>Existencia actual</td>
+                            <td style="text-align: center; background-color: white;color: black;">9</td>
+                        </tr>
+                        <tr>
+                            <td>Valor de la ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+        <div id="popup6" class="overlayd">
+            <a href="#" style="text-decoration: none">
+                <table class=" tabla_estados" style="margin-left: auto;margin-right: auto; margin-top: 15%">
+                    <tbody>
+                        <tr>
+                            <td>CODIGO REPUESTO</td>
+                            <td style="text-align: center; background-color: white;color: black;">153678</td>
+                        </tr>
+                        <tr>
+                            <td>Precio unitario ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">7</td>
+                        </tr>
+                        <tr>
+                            <td>Existencias cierre ultimo ejercio contable</td>
+                            <td style="text-align: center; background-color: white;color: black;">3</td>
+                        </tr>
+                        <tr>
+                            <td>Total unidades ingresadas</td>
+                            <td style="text-align: center; background-color: white;color: black;">1</td>
+                        </tr>
+                        <tr>
+                            <td>Existencia actual</td>
+                            <td style="text-align: center; background-color: white;color: black;">2</td>
+                        </tr>
+                        <tr>
+                            <td>Valor de la ultima compra</td>
+                            <td style="text-align: center; background-color: white;color: black;">3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div>
         <div class="row justify-content-between">
             <div class="col-4">
                 <h2 class="chapa_patente" style="background: #246355; color: white;">Chapa|Patente: 12245</h2>
@@ -155,90 +318,78 @@
         </div>
         <div class="row">
             <div class="col">
-                 <table class="table">
+                <table class="table">
                     <thead style="background-color: #246355;">
                         <th style=" vertical-align: middle;">Codigo</th>
                         <th style=" vertical-align: middle;">Descripción</th>
                         <th>Fecha Ult. Factura</th>
                         <th>N° Ult. Factura</th>
                     </thead>
-                        <tr>
-                            <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi eius
-                                facilis
-                                voluptatibus?</td>
-                            <td>14/08/2019</td>
-                            <td>12345</td>
-                        </tr>
-                        <tr>
-                            <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
-                            <td>Lorem ipsum dolor sit amet.</td>
-                            <td>14/08/2019</td>
-                            <td>12345</td>
-                        </tr>
-                        <tr>
-                            <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
-                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, reiciendis!
-                            </td>
-                            <td>14/08/2019</td>
-                            <td>12345</td>
-                        </tr>
-                        <tr>
-                            <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsam,
-                                iste architecto
-                                eum labore enim.</td>
-                            <td>14/08/2019</td>
-                            <td>12345</td>
-                        </tr>
-                        <tr> 
-                            <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
-                            <td>Lorem ipsum dolor sit.</td>
-                            <td>14/08/2019</td>
-                            <td>12345</td>
-                        </tr>
-                        <tr>
-                            <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
-                            <td>Lorem, ipsum dolor.</td>
-                            <td>14/08/2019</td>
-                            <td>12345</td>
-                        </tr>
-                        <tr>
-                            <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequatur
-                                non
-                                consectetur quia maxime dolorem, libero distinctio quas?</td>
-                            <td>14/08/2019</td>
-                            <td>12345</td>
-                        </tr>
-                        <tr>
-                            <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga!</td>
-                            <td>14/08/2019</td>
-                            <td>12345</td>
-                        </tr>
-                    </tbody></div>
-                </table>
+                    <tr>
+                        <td><a style="display:block;color: black" href="#popup"> 156846</a></td>
+                        <td>Bomba de combustible. Tipo de combustible:Nafta. Eléctrica: Sí. Filtro: Sí. Junta o sello:
+                            No. OEM: 152595. Presión máxima: 3 psi. Cantidad de tomas: 2</td>
+                        <td>14/08/2019</td>
+                        <td>12345</td>
+                    </tr>
+                    <tr>
+                        <td><a style="display:block;color: black" href="#popup2"> 156846</a></td>
+                        <td>Cadena Bomba Aceite. Eslabones:52. Juntas: No.Origen: Homologado. OEM: 103310</td>
+                        <td>14/08/2019</td>
+                        <td>16541</td>
+                    </tr>
+                    <tr>
+                        <td><a style="display:block;color: black" href="#popup3"> 156846</a></td>
+                        <td>Amortiguador. Posición: Trasera/Delantera. Lado: Izquierdo/Derecho. Tipo de composición:
+                            Hidráulico.Largo extendido: 1 cm. Largo comprimido: 1 cm.</td>
+                        <td>13/08/2019</td>
+                        <td>98632</td>
+                    </tr>
+                    <tr>
+                        <td><a style="display:block;color: black" href="#popup4"> 156846</a></td>
+                        <td>Arbol de levas. Duración de la admisión a 0,50 pulgadas de elevación: 203 in. Duración del
+                            escape a 0,50 pulgadas de elevación: 192 in. Elevación de la válvula de admisión: 18.72 mm.
+                            Elevación de la válvula de escape: 18.47 mm.</td>
+                        <td>12/08/2019</td>
+                        <td>78546</td>
+                    </tr>
+                    <tr>
+                        <td><a style="display:block;color: black" href="#popup5"> 156846</a></td>
+                        <td>Bateria. Voltaje: 12V. Capacidad de la batería: 75 mAh. Altura: 17.5 cm. Ancho: 17.5 cm.
+                            Largo: 27.5 cm</td>
+                        <td>11/08/2019</td>
+                        <td>54682</td>
+                    </tr>
+                    <tr>
+                        <td><a style="display:block;color: black" href="#popup6"> 156846</a></td>
+                        <td>Silenciador.Material: chapa galbanizada. Forma: Redondo. Largo del silenciador: 40 cm. Ancho
+                            del silenciador: 15 cm. Número de entradas: 1. Número de salidas: 1</td>
+                        <td>11/08/2019</td>
+                        <td>24585</td>
+                    </tr>
+                    </tbody>
             </div>
-
+            </table>
         </div>
 
-
-             </div>
-
+    </div>
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 
